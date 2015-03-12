@@ -1,0 +1,10 @@
+create database db_purchases;
+use db_purchases;
+
+create table purchases
+(
+ts_day_start INT(11) NOT NULL,
+pm_id INT(11) NOT NULL,
+price INT(11) NOT NULL,
+a_count INT(11) NOT NULL
+);

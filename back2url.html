@@ -1,0 +1,9 @@
+<?php
+    
+    @include('safe_entry.html');
+    
+    function back2url($url,$delay)
+        {//¬ернутьс€ на страницу с конкретным адресом $url через врем€ задержки $delay в секундах.
+            exit("<html><head><meta http-equiv='Refresh' content='".$delay."; URL=".$url."'></head></html>");
+        }
+?>

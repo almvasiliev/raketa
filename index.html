@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Purchases</title>
+<link rel="stylesheet" href="./css/pickmeup.min.css" type="text/css" /><!--calendar styles-->
+<script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="./js/jquery.blockUI.js"></script><!--blocUI-->
+<script type="text/javascript" src="./js/jquery.pickmeup.min.js"></script><!--calendar javascripts-->
+<script type="text/javascript" src="./js/jquery.pickmeup.settings.js"></script><!--calendar settings-->
+<script type="text/javascript" src="./js/jquery.ajax.load.js"></script><!--jquery ajax load-->
+
+</head>
+<body>
+
+	<div id="holder">
+		<h1>Purchases</h1>
+		<!--<button id="fill_table">Fill Table!</button>-->
+		<p>Summary table of purchases from <input type="text" value="" id='ds'> to <input type="text" id='df' value="">  <button class='load' id="load">Load!</button></p>
+		<p>Sort by ID <button class='load' id="sort_by_ID_asc" style='display: none;'>Lowest first</button> <button class='load' id="sort_by_ID_desc">Highest first</button>  Sort by date <button class='load' id="sort_by_date_asc" style='display: none;'>Lowest first</button> <button class='load' id="sort_by_date_desc">Highest first</button></p>
+		<input type="hidden" value='sort_by_ID_asc' id='sort_by_id'>
+		<input type="hidden" value='sort_by_date_asc' id='sort_by_date'>
+		
+		<div id="loader"></div>
+	</div>
+</body>
+</html>
